@@ -118,6 +118,10 @@ header nav .menu {
     cursor: pointer;
 }
 
+header nav .menu::selection {
+    background-color: transparent;
+}
+
 @media (min-width: 768px) {
     header nav .menu {
         display: none;
