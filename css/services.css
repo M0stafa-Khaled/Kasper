@@ -1,0 +1,45 @@
+.services {
+    padding-top: var(--section--padding);
+    padding-bottom: var(--section--padding);
+}
+
+@media screen and (min-width: 769px) {
+    .services .services-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+        column-gap: 40px;
+        row-gap: 60px;
+    }
+}
+
+.services .srv-box {
+    padding: 10px;
+    display: flex;
+}
+
+.services .srv-box i {
+    margin-right: 50px;
+}
+
+.services .text h3 {
+    color: var(--main-color);
+    margin-bottom: 30px;
+}
+
+.services .text p {
+    color: var(--p-color);
+    line-height: 2;
+}
+
+@media (max-width: 768px) {
+    .services .srv-box {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .services .srv-box i {
+        margin: 0 0 30px;
+    }
+}
